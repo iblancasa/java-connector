@@ -27,3 +27,8 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }
+
+test{
+    systemProperty "java.library.path", "/home/israel/trees/connector/java-connector/src/javalib/src/main/resources:/home/israel/trees/connector/rticonnextdds-connector/lib/x64Linux2.6gcc4.4.5"
+    //environment "LD_LIBRARY_PATH", "/home/israel/trees/connector/rticonnextdds-connector/lib/x64Linux2.6gcc4.4.5"
+}
